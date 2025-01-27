@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+  
+  body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    line-height: 1.6;
+    color: rgb(92, 199, 123);
+    background-color: #ffffff;
+  }
+  
+  header {
+    color:rgb(0, 0, 0);
+    padding: 20px 10px;
+    text-align: center;
+  }
+  
+  .desktop-message {
+    display: block; 
+  }
+  
+  .mobile-message {
+    display: none; 
+  }
+  .tablet-message {
+    display: none; 
+
+  }
+
+  nav {
+
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 1rem;
+    padding: 10px 0;
+  }
+  
+  nav a {
+    color: rgb(249, 18, 214);
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    padding: 8px 16px;
+    transition: border 0.3s ease;
+  }
+  
+  nav a:hover {
+    border: 1px solid rgb(0, 0, 102);
+  }
+
+  .container1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  .container2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  .container3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  .text-content {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    background: #fffbfb;
+    border: 1px solid   #11008e;;
+  }
+  
+
+
+  @media (max-width: 1024px){
+    body{
+      background-color: #9f5a94;
+    }
+  
+    .container{
+      flex-direction: column;
+    }
+  
+    .desktop-message{
+      display: none;
+    }
+  
+    .mobile-message{
+      display: none;
+    }
+  
+    .tablet-message{
+      display: block;
+    }
+    
+    .text-content,
+    .image-content{
+      margin-bottom: 20px;
+    }
+}
+  @media (max-width: 768px){
+    body{
+      background-color: rgb(83, 154, 130);
+    }
+    nav{
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-around;
+      margin-left: 20px;
+    }
+  
+    .image-grid{
+      grid-template-columns: repeat(2,1fr);
+    }
+  
+     .desktop-message{
+      display: none;
+    }
+
+    .mobile-message{
+        display: block;
+      }
+
+    .tablet-message{
+        display: none;
+      }
+}
+  
